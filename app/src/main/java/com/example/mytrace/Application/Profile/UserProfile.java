@@ -45,6 +45,7 @@ ImageView UserProfile_img,TGR_ID_page , language_img_pag,Chagne_password_imag ;
                 startActivity(new Intent(UserProfile.this, Change_Language.class));
             }
 
+
         });
         // this listener to get to Change Password page
         Chagne_password_imag.setOnClickListener(new View.OnClickListener() {
@@ -79,7 +80,11 @@ ImageView UserProfile_img,TGR_ID_page , language_img_pag,Chagne_password_imag ;
         startActivity(intent3);
     }
 
-
+ language_img_pag.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            startActivity(new Intent(UserProfile.this, Change_Language.class));
+        }
 }
 
 
